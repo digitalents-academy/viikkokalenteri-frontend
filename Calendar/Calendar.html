@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&display=swap" rel="stylesheet">
+    <title>Week Calendar</title>
+</head>
+<body>
+    <header>
+        <div id="Header">
+            <p id="HeaderTitle">Digitalents Calendar</p>
+        </div>
+    </header>
+
+    <div id="Title">
+            Week Calendar
+    </div>
+
+    <div id="CalendarBody">
+        <div id="Time">
+            <div onclick="show()" class="timetable">08.00</div>
+            <div class="timetable">09.00</div>
+            <div class="timetable">10.00</div>
+            <div class="timetable">11.00</div>
+            <div class="timetable">12.00</div>
+            <div class="timetable">13.00</div>
+            <div class="timetable">14.00</div>
+            <div class="timetable">15.00</div>
+            <div class="timetable">16.00</div>
+        </div>
+       
+        <div id="flexBox">
+            
+            <div class="Day" id="Day1">
+                
+                <div onclick="show()" id="topCell1" class="timeCell"></div>
+                <div onclick="show()" id="timeCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell6" class="timeCell"></div>
+                <div onclick="show()" id="timeCell7" class="timeCell"></div>
+                <div onclick="show()" id="timeCell8" class="timeCell"></div>
+                <div onclick="show()" id="bottomCell1" class="timeCell"></div>
+            </div>
+            
+            <div class="Day" id="Day2">
+                
+                <div onclick="show()" id="topCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell6" class="timeCell"></div>
+                <div onclick="show()" id="timeCell7" class="timeCell"></div>
+                <div onclick="show()" id="timeCell8" class="timeCell"></div>
+                <div onclick="show()" id="bottomCell2" class="timeCell"></div>
+            </div>
+            
+            <div class="Day" id="Day3">
+                
+                <div onclick="show()" id="topCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell6" class="timeCell"></div>
+                <div onclick="show()" id="timeCell7" class="timeCell"></div>
+                <div onclick="show()" id="timeCell8" class="timeCell"></div>
+                <div onclick="show()" id="bottomCell3" class="timeCell"></div>
+            </div>
+            
+            <div class="Day" id="Day4">
+              
+                <div onclick="show()" id="topCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell6" class="timeCell"></div>
+                <div onclick="show()" id="timeCell7" class="timeCell"></div>
+                <div onclick="show()" id="timeCell8" class="timeCell"></div>
+                <div onclick="show()" id="bottomCell4" class="timeCell"></div>
+            </div>
+         
+            <div class="Day" id="Day5">
+                
+                <div onclick="show()" id="topCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell2" class="timeCell"></div>
+                <div onclick="show()" id="timeCell3" class="timeCell"></div>
+                <div onclick="show()" id="timeCell4" class="timeCell"></div>
+                <div onclick="show()" id="timeCell5" class="timeCell"></div>
+                <div onclick="show()" id="timeCell6" class="timeCell"></div>
+                <div onclick="show()" id="timeCell7" class="timeCell"></div>
+                <div onclick="show()" id="timeCell8" class="timeCell"></div>
+                <div onclick="show()" id="bottomCell5" class="timeCell"></div>
+            </div>
+        </div>
+        <div id="days">
+            <div class="dayContain">Monday</div>
+            <div class="dayContain">Tuesday</div>
+            <div class="dayContain">Wednesday</div>
+            <div class="dayContain">Thursday</div>
+            <div class="dayContain">Friday</div>
+        </div>
+        <div id="dates">
+            <div id="dateContain">15.11</div>
+            <div id="dateContain">16.11</div>
+            <div id="dateContain">17.11</div>
+            <div id="dateContain">18.11</div>
+            <div id="dateContain">19.11</div>
+        </div>
+        <div onclick="show()" id="addButton">Add Event</div>
+        
+
+        <div id="timer">11.00
+            <div id="timerLine">
+
+            </div>
+        </div>
+
+        <div onclick="show()" id="calendarEvent1">
+            <p id="pink">Meeting</p>
+            <p id="detailsDate1">15.11</p>
+            <p id="detailsTime1">10.00 - 10.30</p>
+            <p id="detailsLoc1">at Digitalents</p>
+            <p id="detailsDesc1">More information about <br> the meeting, as needed</p>
+            <p id="detailsPlanner1">by Person 1</p>
+        </div>
+        <div onclick="show()" id="calendarEvent2">
+            <p id="green">Meeting</p>
+            <p id="detailsDate2">16.11</p>
+            <p id="detailsTime2">10.00 - 10.30</p>
+            <p id="detailsLoc2">at Digitalents</p>
+            <p id="detailsDesc2">More information about <br> the meeting, as needed</p>
+            <p id="detailsPlanner2">by Person 2</p>
+        </div>
+        <div onclick="show()" id="calendarEvent3">
+            <p id="orange">Meeting</p>
+            <p id="detailsDate3">18.11</p>
+            <p id="detailsTime3">11.30 - 12.00</p>
+            <p id="detailsLoc3">at Digitalents</p>
+            <p id="detailsDesc3">More information about <br> the meeting, as needed</p>
+            <p id="detailsPlanner3">by Person 3</p>
+        </div>
+        <div onclick="show()" id="calendarEvent4">
+            <p id="blue">Meeting</p>
+            <p id="detailsDate4">16.11</p>
+            <p id="detailsTime4">13.00 - 13.30</p>
+            <p id="detailsLoc4">at Digitalents</p>
+            <p id="detailsDesc4">More information about <br> the meeting, as needed</p>
+            <p id="detailsPlanner4">by Person 4</p>
+        </div>
+        
+
+    </div>
+    <div class="hidden" id="AddEvent">
+        <div id="titleInput"><input type="text" placeholder="Title"> </div>
+        <div id="nameInput"><input type="text" placeholder="Name"> </div>
+        <div id="dateInput"><input type="date" placeholder="Name"> </div>
+        <div id="timeInput"><input type="time" placeholder="Name"> </div>
+        <div id="locInput"><input type="text" placeholder="Location"> </div>
+        <div id="descInput"><textarea name="" id="" cols="60" rows="10" placeholder="A description about the event"></textarea> </div>
+        <div  onclick="show()" id="ConfirmButton">Confirm</div>
+        <div  onclick="show()" id="DeleteButton">Delete</div>
+    </div>
+
+    <script src="Calendar.js"></script>
+    
+</body>
+</html>
