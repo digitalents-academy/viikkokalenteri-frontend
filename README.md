@@ -1,1 +1,1 @@
-Author: Jouni (https://github.com/HeikJou)
+Author: Jouni https://github.com/HeikJou
