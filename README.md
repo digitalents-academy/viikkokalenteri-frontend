@@ -1,6 +1,6 @@
 # Viikkolanteri-Frontend  
 Mockup website for week calendar project  
 
-[Layout Design](https://www.figma.com/file/Kbo2lXmTTX93KFlU8OM6Ug/Viikkokalenteri?node-id=31%3A7)
+[Layout Design](https://github.com/digitalents-academy/viikkokalenteri/blob/main/Viikkokalenteri.pdf)
 # Author  
 [Jouni Heikkinen](https://github.com/HeikJou)
